@@ -1,0 +1,372 @@
+:root {
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2e2f42;
+  --third-bg-color: #f4f4fd;
+  --border-for-icons: #8e8f99;
+  --accent: #4d5ae5;
+  --accent-two: #404bbf;
+  --accent-color-social: #31d0aa;
+  --button-shadow-color: rgba(0, 0, 0, 0.15);
+  --elements-border-color: #e7e9fc;
+  --active-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --card-shadow-color: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --card-set-gap-left: 24px;
+  --card-set-gap-top: 48px;
+  --madal-bg-color: #fcfcfc;
+}
+
+.link {
+  padding: 0;
+}
+
+.container {
+  max-width: 767.9px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 24px 16px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+}
+
+.main-nav.list,
+.adress {
+  display: none;
+}
+
+.main-nav-text.menu {
+  display: inline;
+}
+
+.menu-open {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  transform: translateX(100%);
+}
+
+.mobile-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  height: 100%;
+  padding: 80px 24px 24px 24px;
+}
+
+.email {
+  display: inline-block;
+  margin-bottom: 48px;
+}
+
+.phone:hover,
+.email:hover {
+  color: var(--accent-two);
+}
+
+.phone:focus,
+.email:focus {
+  color: var(--accent-two);
+}
+
+.back-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  bottom: auto;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-menu-btn:hover,
+back-menu-btn:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-two);
+  border: none;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu,
+.phone {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.menu-adress {
+  font-style: normal;
+}
+
+.phone {
+  display: inline-block;
+  color: var(--secondary-text-color);
+  margin-bottom: 40px;
+}
+
+.email {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.menu-media-list-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menu-media-list {
+  display: flex;
+  gap: 56px;
+}
+
+.menu-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-media-link:hover,
+.menu-media-link:focus {
+  background-color: var(--accent-color-social);
+}
+
+.menu-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-media-icon {
+  fill: var(--third-bg-color);
+  margin: 8px;
+}
+
+.main-nav-item {
+    width: 100%;
+  margin: 0;
+}
+
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/hero-mob.jpg');
+  padding: 112px 0;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/hero-mob@2x.jpg');
+  }
+}
+
+.hero-name {
+  display: none;
+}
+
+.hero-name-mob {
+  max-width: 320px;
+  margin: 0 auto;
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.modal {
+  min-width: 392px;
+}
+
+.feauters-list {
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feauters-list .item {
+  width: 100%;
+  margin: 0;
+}
+
+.feauters-icon {
+  display: none;
+}
+
+.feauters-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.project-card-link {
+  width: 100%;
+}
+
+.feauters-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.projects {
+  display: none;
+}
+
+.team-list {
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+
+.team-card-content {
+  width: 264px;
+}
+
+.customers-list {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
+}
+
+.custom-card {
+  height: 88px;
+  width: calc((100% - 24px) / 2);
+}
+
+.custom-icon {
+  width: 110px;
+  height: 56px;
+}
+
+.footer-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.footer-logo-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  .footer-form-paragraph {
+    text-align: center;
+  }
+}
+
+.input-sub {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  min-width: 398px;
+  opacity: 0.3;
+}
+
+/* PORTFOLIO */
+
+.filtre-buttons.list {
+  row-gap: 16px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+  padding-left: 16px;
+}
+
+.for-portfolio-main {
+  padding: 48px 0;
+}
+
+.projects-card {
+  justify-content: center;
+}
+
+.no-padding {
+  padding: 0;
+}
