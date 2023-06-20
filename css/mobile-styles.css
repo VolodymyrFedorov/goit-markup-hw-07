@@ -91,6 +91,43 @@
   padding: 80px 24px 24px 24px;
 }
 
+.site-nav-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.menu-info {
+  font-style: normal;
+  margin-bottom: 48px;
+}
+.menu-list .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.cont-info-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4d5ae5;
+}
+
+@media only screen and (max-width: 427px) {
+  .cont-info-tel {
+    font-size: 26px;
+  }
+}
+.cont-info-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 .email {
   display: inline-block;
   margin-bottom: 48px;
@@ -125,7 +162,7 @@
 }
 
 .back-menu-btn:hover,
-back-menu-btn:focus {
+.back-menu-btn:focus {
   fill: var(--primary-bg-color);
   background-color: var(--accent-two);
   border: none;
@@ -165,14 +202,20 @@ back-menu-btn:focus {
   color: #434455;
 }
 
-.menu-media-list-wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .menu-media-list {
   display: flex;
-  gap: 56px;
+}
+
+@media screen and (max-width: 427px) {
+  .menu-media-list {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  .menu-media-list {
+    gap: 56px;
+  }
 }
 
 .menu-media-link {
