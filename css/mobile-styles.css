@@ -1,13 +1,13 @@
 :root {
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
+  --accent: #4d5ae5;
+  --accent-two: #404bbf;
+  --accent-color-social: #31d0aa;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2e2f42;
   --third-bg-color: #f4f4fd;
   --border-for-icons: #8e8f99;
-  --accent: #4d5ae5;
-  --accent-two: #404bbf;
-  --accent-color-social: #31d0aa;
   --button-shadow-color: rgba(0, 0, 0, 0.15);
   --elements-border-color: #e7e9fc;
   --active-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -24,7 +24,7 @@
 }
 
 .container {
-  max-width: 767.9px;
+  max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -63,12 +63,6 @@
   cursor: pointer;
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
-
-  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mobile-menu {
   position: fixed;
   width: 100%;
@@ -79,8 +73,12 @@
   background-color: var(--primary-bg-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
   transform: translateX(100%);
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-wrapper {
@@ -141,7 +139,7 @@ back-menu-btn:focus {
 
 .menu,
 .phone {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -159,7 +157,7 @@ back-menu-btn:focus {
 }
 
 .email {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -206,7 +204,7 @@ back-menu-btn:focus {
 }
 
 .main-nav-item {
-    width: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -215,7 +213,7 @@ back-menu-btn:focus {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/hero/hero-mob.jpg');
+    url("../images/hero/hero-mob.jpg");
   padding: 112px 0;
 }
 
@@ -227,23 +225,16 @@ back-menu-btn:focus {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/hero/hero-mob@2x.jpg');
+      url("../images/hero/hero-mob@2x.jpg");
   }
 }
 
 .hero-name {
-  display: none;
-}
-
-.hero-name-mob {
   max-width: 320px;
-  margin: 0 auto;
-  color: var(--primary-bg-color);
-  font-weight: 700;
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 
 .modal {
@@ -292,10 +283,6 @@ back-menu-btn:focus {
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
-}
-
-.team-card-content {
-  width: 264px;
 }
 
 .customers-list {
@@ -347,8 +334,6 @@ back-menu-btn:focus {
   min-width: 398px;
   opacity: 0.3;
 }
-
-/* PORTFOLIO */
 
 .filtre-buttons.list {
   row-gap: 16px;
