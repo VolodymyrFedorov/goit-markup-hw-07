@@ -75,17 +75,17 @@ img {
 }
 
 .section {
-  min-width: 400px;
+  min-width: 320px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .header {
-  min-width: 400px;
+  min-width: 320px;
 }
 
 .footer {
-  min-width: 400px;
+  min-width: 320px;
 }
 
 header {
@@ -283,7 +283,7 @@ header {
 }
 
 .is-active {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .team-card-content {
@@ -488,7 +488,6 @@ header {
 
 .footer-form-paragraph {
   color: var(--primary-bg-color);
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -497,7 +496,6 @@ header {
 }
 
 .footer-input {
-  width: 264px;
   height: 40px;
   padding-left: 16px;
   color: var(--primary-bg-color);
@@ -508,6 +506,7 @@ header {
   border: 1px solid var(--primary-bg-color);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  opacity: 0.3;
 }
 
 .footer-input::placeholder {
@@ -587,6 +586,7 @@ header {
 
 .filtre-buttons.list {
   display: flex;
+  justify-content: center;
   column-gap: 24px;
   margin-bottom: 72px;
 }
@@ -628,7 +628,7 @@ header {
 
 .project-card-link:hover,
 .project-card-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 1px 6px rgba(9, 9, 17, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 

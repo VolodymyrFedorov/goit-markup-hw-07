@@ -127,6 +127,8 @@
 }
 
 .customers-list {
+  width: 552px;
+  margin: 0 auto;
   flex-wrap: wrap;
   row-gap: 72px;
   justify-content: center;
@@ -142,6 +144,8 @@
   flex-wrap: wrap;
   row-gap: 72px;
   column-gap: 24px;
+
+  padding: 0 108px;
 }
 
 .footer-social,
@@ -150,7 +154,7 @@
 }
 
 .footer-input {
-  max-width: 264px;
+  width: 264px;
   opacity: 0.3;
 }
 
