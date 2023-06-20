@@ -86,7 +86,6 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-
   height: 100%;
   padding: 80px 24px 24px 24px;
 }
@@ -97,8 +96,13 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--secondary-bg-color);
 }
+
+.is-active {
+    color: var(--accent);
+}
+
 .menu-info {
   font-style: normal;
   margin-bottom: 48px;
@@ -125,7 +129,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .email {
@@ -199,7 +203,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .menu-media-list {
