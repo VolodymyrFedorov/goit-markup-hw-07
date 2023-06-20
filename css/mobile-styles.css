@@ -279,13 +279,13 @@
 .hero-name {
   max-width: 320px;
   margin-bottom: 72px;
-
   font-size: 36px;
   line-height: 1.11;
 }
 
 .modal {
-  min-width: 392px;
+  max-width: 392px;
+  width: 100%;
 }
 
 .feauters-list {
